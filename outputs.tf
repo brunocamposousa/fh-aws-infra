@@ -16,10 +16,6 @@ output "cognito_user_pool_client_secret" {
   sensitive = true
 }
 
-output "cognito_user_pool_domain" {
-  value = aws_cognito_user_pool_domain.user_pool_domain.domain
-}
-
 output "s3_bucket_name" {
   value = aws_s3_bucket.example.bucket
 }
