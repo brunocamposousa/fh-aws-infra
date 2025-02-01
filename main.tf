@@ -105,12 +105,6 @@ resource "aws_cognito_user_pool_client" "user_pool_client" {
   prevent_user_existence_errors = "ENABLED"
 }
 
-# Criação do Domínio do Cognito
-#resource "aws_cognito_user_pool_domain" "user_pool_domain" {
-#  domain       = "hackuser"
-#  user_pool_id = aws_cognito_user_pool.user_pool.id
-#}
-
 # Criação do bucket S3 com acesso público para download (sem ACLs)
 resource "aws_s3_bucket" "example" {
   bucket = "hackvideobucket00"
